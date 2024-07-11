@@ -1,5 +1,6 @@
 @import url(footer/style.css);
 @import url(nav/style.css);
+@import url(particles.js);
 @import url(style.css);
 @import url(../home/style.css);
 @import url(responsive.css);
