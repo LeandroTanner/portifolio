@@ -1,0 +1,156 @@
+:root{ /* Cria variaveis com minha paleta de cores para serm utilizadas no site */
+    --black: #000000; 
+    --charcoal: #151515;
+    --gray: #6C757D;
+    --ligthGray: #E5E5E5;
+    --orange: #FCA311;
+    --darkOrange: #f48c06;
+    --blue: #14213D;
+}
+
+footer{ /* Footer com todos os itens */
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.socialFooter{ /* Div com os icones das redes sociais */
+    width: 15rem;
+}
+
+.socialFooter ul{ /* Lista com os icones de redes sociais */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.socialItemsFooter { /* Links das redes sociais */
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.socialItemsFooter:hover { /* Quando passar o mouse em cima do icone de rede social */
+    transform: translateY(-5%);
+}
+
+.tooltipDiv{ /* Div que aparece com o qrcode */
+    background: var(--charcoal);
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 10.5rem;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    bottom: 3.5rem; /* Ajuste conforme necessário */
+    left: 1.25rem;
+    transform: translateX(-55%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltipDiv::after { /* Adiciona o "rabinho na div que aparece com o qrcode */
+    content: '';
+    position: absolute;
+    bottom: -35px; /* Ajuste conforme necessário */
+    left: 45%; /* Centralize o "rabo" abaixo da div */
+    margin-left: -10px; /* Ajuste para alinhar corretamente o "rabo" */
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--charcoal) transparent transparent transparent;
+}
+  
+.qrcode{ /* QR Code em png */
+    max-width: 100%;
+}
+
+.tooltipText{ /* Texto com link para as redes */
+    color: white;
+    font-size: 1rem;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.tooltipSpan{ /* Mensagem para ir direto */
+    color: var(--orange);
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.socialItemsFooter:hover .tooltipDiv{ /* Mostra o texto quando passar o mouse em cima do icone de rede social */ 
+    visibility: visible;
+    opacity: 1;
+}
+
+.linkedin{ /* Icone do linkedin */
+    transition: 0.2s ease;
+}
+.linkedin:hover{ /* Quando passar o mouse em cima do icone do linkedin */
+    color: #0050ac;
+}
+
+.email{ /* Icone do email */
+    transition: 0.2s ease;
+}
+.email:hover{ /* Quando passar o mouse em cima do icone do email */
+    color: #ce3c32;
+}
+
+.github{ /* Icone do github */
+    transition: 0.2s ease;
+}
+.github:hover{ /* Quando passar o mouse em cima do icone do github */
+    color: #3b3333;
+}
+
+.telegram{ /* Icone do telegram */
+    transition: 0.2s ease;
+}
+.telegram:hover{ /* Quando passar o mouse em cima do icone do telegram */
+    color: #1a5faf;
+}
+
+.copyItem{ /* Label do copy */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: text;
+    color: white;
+}
+
+.addressLabel{ /* Label do endereço */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    cursor: text;
+    color: white;
+    font-weight: 500;
+}
+
+.adress{ /* Icone do endereço */
+    color: rgb(150, 0, 0);
+}   

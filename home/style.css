@@ -1,0 +1,922 @@
+:root {
+  /* Cria variaveis com minha paleta de cores para serm utilizadas no site */
+  --black: #000000;
+  --charcoal: #151515;
+  --gray: #6c757d;
+  --ligthGray: #e5e5e5;
+  --orange: #fca311;
+  --darkOrange: #f48c06;
+  --blue: #14213d;
+}
+
+.sections {
+  /* Estilo das divs de seções */
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.title {
+  cursor: text;
+}
+
+/* Início edição div de terminal */
+
+.divTerminal {
+  /* Div que contem todos os itens do terminal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  color: white;
+  gap: 0;
+  font-family: monospace;
+}
+
+.terminalHeader {
+  /* Header do terminal, com os icones, texto e simbolo de + */
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: auto;
+}
+
+.textTerminal {
+  /* Parágrafo com o texto do terminal */
+  background-color: rgba(82, 82, 82, 0.7);
+  width: 100%;
+  margin: 0;
+  padding: 0.5em 0.7em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: monospace;
+  min-height: 30rem;
+}
+
+.terminalPoints {
+  /* Div com os 3 pontos do terminal */
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.point1 {
+  /* Ponto vermelho do terminal */
+  color: red;
+}
+
+.point1:active {
+  /* Ponto vermelho do terminal quando clicado, ativo*/
+  transform: scale(0.9);
+}
+
+.point2 {
+  /* Ponto amarelo do terminal */
+  color: yellow;
+}
+
+.point2:active {
+  /* Ponto amarelo do terminal quando clicado, ativado */
+  transform: scale(0.9);
+}
+
+.point3 {
+  /* Ponto verde do terminal */
+  color: green;
+}
+
+.point3:active {
+  /* Ponto verde do terminal quando clicado, ativado */
+  transform: scale(0.9);
+}
+
+.plusIcon {
+  /* Icone de + no terminal */
+  border: 2px solid white;
+  background-color: rgb(53, 52, 52);
+  border-bottom: none;
+  padding: 0.2em;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+}
+
+.plusIcon:active {
+  /* Icone de + no terminal quando clicado, ativo */
+  transform: scale(0.9);
+}
+
+.terminalUser {
+  /* Span com o "usuário" do terminal */
+  /* color: var(--orange); */
+  color: orange;
+  font-weight: 500;
+  filter: brightness(1.2);
+}
+
+.terminalSymbol {
+  /* Span com o símbolo de ~ do terminal */
+  color: green;
+  font-weight: 600;
+}
+
+.terminalQuestion {
+  /* Span com a pergunta feita no início do terminal */
+  font-weight: 700;
+}
+
+/* Estilo das partículas */
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: -1;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/* ----------------------------------- EDIÇÃO DA SEÇÃO DE BOAS VINDAS ----------------------------------- */
+
+#welcomeText {
+  /* Texto da seção de bem vindo */
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+#welcomeName {
+  /* Meu nome da seção de bem vindo */
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--orange);
+  cursor: text;
+}
+
+/* Menu full screen */
+
+.menuFullScreen li {
+  /* Controla os elementos da lista */
+  font-size: 2.5rem;
+}
+
+/* Sobre mim e objetivo */
+
+.textDiv {
+  /* Div com o texto do terminal */
+  width: 100%;
+}
+
+.title {
+  /* Títulos das seções */
+  position: relative;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.divTerminal {
+  /* Div com os itens do terminal */
+  width: 32rem;
+  font-size: 1.2rem;
+}
+
+.textDiv p,
+.terminalHeader {
+  /* Header e parágrafo do terminal */
+  width: 100%;
+}
+
+.terminalHeader {
+  /* Header do terminal */
+  padding: 0.4rem 1rem;
+}
+
+/* ----------------------------------- EDIÇÃO DA SEÇÃO DE EXPERIÊNCIA  ----------------------------------- */
+
+#experience {
+  /* Seção de experiência */
+  padding-bottom: 2em;
+}
+
+.containerCardsExperience {
+  /* Container com os cards de experiência */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cardExperience {
+  /* Div do card de experiência */
+  background-color: var(--charcoal);
+  width: 35rem;
+  border-radius: 25px;
+  padding: 1em;
+  min-height: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardImgExperience {
+  /* Div com a imagem do card de experiência */
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15rem;
+}
+
+.imgExperience {
+  /* Imagem do card de experiência */
+  max-width: 40%;
+}
+
+.cardTextExperience {
+  /* Div com todos os textos do card de experiência */
+  color: white;
+  font-size: 1.2rem;
+}
+
+.cardTitleExperience {
+  /* Div do título do card de experiência */
+  font-weight: 700;
+  padding-top: 0.8em;
+}
+
+.cardParagraphExperience {
+  /* Div da imagem do card de experiência */
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.cardDetachExperience {
+  /* Div do texto destaque do card de experiência */
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.cardButtonExperience {
+  /* Div com o "botão" do card de experiência */
+  width: 100%;
+  background-color: var(--orange);
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardButtonExperience a {
+  /* Link "botão" do card de experiência */
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.7em;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  transition: background-color 0.5s;
+}
+
+.cardButtonExperience a:hover {
+  /* Quando passar o mouse em cima do "botão" do link */
+  background-color: var(--darkOrange);
+}
+
+.cardButtonExperience a:active {
+  /* Quando o link "botão" do card de experiência estiver ativo, clicado */
+  box-shadow: inset 3px 3px 5px var(--black);
+}
+
+/* ----------------------------------- EDIÇÃO DA SEÇÃO DE FORMAÇÃO ----------------------------------- */
+
+#formation {
+  /* Seção de formação */
+  padding-bottom: 2rem;
+}
+
+.containerCardsFormation {
+  /* Container com os cards de formação */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cardFormation {
+  /* Div do card de formação */
+  background-color: var(--charcoal);
+  min-height: 35rem;
+  width: 30%;
+  border-radius: 25px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardImgFormation {
+  /* Div com a imagem do card de formação */
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0em;
+  min-height: 16rem;
+}
+
+.imgFormation {
+  /* Imagem do card de formação */
+  max-width: 40%;
+}
+
+.cardTextFormation {
+  /* Div com todos os textos do card de formação */
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.cardTitleFormation {
+  /* Div do título do card de formação */
+  font-weight: 700;
+  padding-top: 0.8em;
+}
+
+.cardParagraphFormation {
+  /* Div da imagem do card de formação */
+  font-weight: 300;
+}
+
+.cardDetachFormation {
+  /* Div do texto destaque do card de formação */
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.cardButtonFormation {
+  /* Div com o "botão" do card de formação */
+  width: 100%;
+  background-color: var(--orange);
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardButtonFormation a {
+  /* Link "botão" do card de formação */
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.7em;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  transition: background-color 0.5s;
+}
+
+.cardButtonFormation a:hover {
+  /* Quando passar o mouse em cima do "botão" do link */
+  background-color: var(--darkOrange);
+}
+
+.cardButtonFormation a:active {
+  /* Quando o link "botão" do card de formação estiver ativo, clicado */
+  box-shadow: inset 3px 3px 5px var(--black);
+}
+
+/* ----------------------------------- EDIÇÃO DA SEÇÃO DE SKILLS ----------------------------------- */
+
+#skills {
+  /* Seção de skills */
+  padding-bottom: 2rem;
+  gap: 50px;
+}
+
+.cardSkill {
+  /* Card de cada skill */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  padding: 1em 0.5em;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 10rem;
+}
+
+.iconsSkills {
+  /* Icones dos cards de cada skill */
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.iconsSkills:hover {
+  /* Quando passar o mouse em cima dos icones de cada skill */
+  transform: translateY(-5%);
+}
+
+#postgreeImg {
+  /* Imagem do postgree */
+  width: 4rem;
+  filter: brightness(0) invert(1);
+}
+#postgreeImg:hover {
+  /* Quando passar o mouse em cima da imagem do postgree */
+  filter: brightness(0) saturate(100%) invert(34%) sepia(64%) saturate(525%)
+    hue-rotate(156deg) brightness(92%);
+}
+
+#cImg {
+  /* Imagem da linguagem C */
+  width: 4rem;
+  filter: invert(1) hue-rotate(180deg) brightness(2);
+  transition: all 0.5s;
+}
+#cImg:hover {
+  /* Quando passar o mouse em cima da imagem da linguagem C */
+  filter: invert(27%) sepia(96%) saturate(464%) hue-rotate(164deg)
+    brightness(93%) contrast(88%);
+}
+
+.containerSkills {
+  /* Div com todos os cards de skills */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
+}
+
+#bootstrap i:hover {
+  /* Quando passar o mouse em cima do icone de bootstrap */
+  color: #5a437f;
+}
+
+#html i:hover {
+  /* Quando passar o mouse em cima do icone de html */
+  color: #fc4f13;
+}
+
+#css i:hover {
+  /* Quando passar o mouse em cima do icone de css */
+  color: #137bc4;
+}
+
+#js i:hover {
+  /* Quando passar o mouse em cima do icone de js */
+  color: var(--orange);
+}
+
+#java i:hover {
+  /* Quando passar o mouse em cima do icone de java */
+  color: #ec3436;
+}
+
+#mysql i:hover {
+  /* Quando passar o mouse em cima do icone de mysql */
+  color: #4a7da4;
+}
+
+#php i:hover {
+  /* Quando passar o mouse em cima do icone de php */
+  color: #7b7fb5;
+}
+
+#linux i:hover {
+  /* Quando passar o mouse em cima do icone de linux */
+  color: #fccb15;
+}
+
+.containerSoftSkills {
+  /* Div com as soft skills */
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.containerSoftSkills ul {
+  /* Lista não ordenada das soft skills */
+  margin: 0;
+  padding: 0em 2em;
+  padding-left: 7rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerSoftSkills li {
+  /* Item da lista não ordenada das soft skills */
+  display: flex;
+  width: 25%;
+  padding: 0.3em;
+  gap: 15px;
+}
+
+.containerSoftSkills i {
+  /* Icone dos itens da lista não ordenada de soft skills */
+  cursor: pointer;
+  color: var(--orange);
+}
+
+/* ----------------------------------- EDIÇÃO DA SEÇÃO DE PROJETOS ----------------------------------- */
+
+#projects {
+  /* Seção de projetos */
+  padding-bottom: 2rem;
+}
+
+.containerCardsProjects {
+  /* Container com os cards de projetos */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+}
+
+.cardProjects {
+  /* Div do card de projetos */
+  background-color: var(--charcoal);
+  min-height: 38rem;
+  width: 30rem;
+  border-radius: 25px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardImgProjects {
+  /* Div com a imagem do card de projetos */
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em 0em;
+}
+
+.imgProjects {
+  /* Imagem do card de projetos */
+  max-width: 60%;
+}
+
+.cardTextProjects {
+  /* Div com todos os textos do card de projetos */
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.cardTitleProjects {
+  /* Div do título do card de projetos */
+  font-weight: 700;
+  padding-top: 0.8em;
+}
+
+.cardParagraphProjects {
+  /* Div do texto do card de projetos */
+  font-weight: 300;
+}
+
+.cardDetachProjects {
+  /* Div do paragrafo destaque do card de projetos */
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.cardButtonProjects {
+  /* Div com o "botão" do card de projetos */
+  width: 100%;
+  background-color: var(--orange);
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardButtonProjects a {
+  /* Link "botão" do card de projetos */
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.7em;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  transition: background-color 0.5s;
+}
+
+.cardButtonProjects a:hover {
+  /* Quando passar o mouse em cima do "botão" do link */
+  background-color: var(--darkOrange);
+}
+
+.cardButtonProjects a:active {
+  /* Quando o link "botão" do card de projetos estiver ativo, clicado */
+  box-shadow: inset 3px 3px 5px var(--black);
+}
+
+/* ----------------------------------- EDIÇÃO DA SEÇÃO DE CONTATO ----------------------------------- */
+
+#contact {
+  /* Seção de contato */
+  padding-bottom: 2rem;
+}
+
+.contactForm {
+  /* Formulário de contato */
+  background-color: var(--charcoal);
+  width: 50%;
+  padding: 1em 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 15px;
+}
+
+.contactLabelForm {
+  /* Labels do formulário */
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.contactInputForm {
+  /* Inputs do formulário */
+  width: 100%;
+  background-color: var(--charcoal);
+  border: 1px solid var(--orange);
+  border-radius: 10px;
+  min-height: 2rem;
+  color: white;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contactButtons {
+  /* Botões do formulário */
+  width: 100%;
+  background-color: var(--orange);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0.5em;
+  transition: 0.5s;
+}
+
+.contactButtons:hover {
+  /* Quando passar o mouse em cima dos botões do formulário */
+  background-color: var(--darkOrange);
+}
+
+.titleContact {
+  /* Título da área de contato */
+  font-size: 2rem;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.textContact {
+  /* Subtitulo da área de contato */
+  color: white;
+  font-size: 1.3rem;
+  padding: 1em;
+}
+
+.contactInputForm:focus {
+  /* Inputs do formulário quando selecionados */
+  outline: 1px solid var(--orange);
+}
+
+.alertContact {
+  /* Destaque no texto */
+  color: red;
+  font-weight: 700;
+}
+
+#mensagem {
+  /* Campo de inserir mensagem do formulário */
+  resize: vertical;
+}
+
+
+/* Animação das seções */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 2s ease;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+    
+    .hidden{
+        transition: none;
+    }
+
+}
+
+
+/* Atrasa transição dos cards de formação */
+.cardFormation:nth-child(1){
+  transition-delay: 400ms;
+}
+.cardFormation:nth-child(2){
+  transition-delay: 800ms;
+}
+.cardFormation:nth-child(3){
+  transition-delay: 1200ms;
+}
+
+/* Atrasa transição dos cards de experiencia */
+.cardExperience:nth-child(1){
+  transition-delay: 500ms;
+}
+.cardExperience:nth-child(2){
+  transition-delay: 1000ms;
+}
+
+
+/* Atrasa transição dos cards de projetos */
+.cardProjects:nth-child(1){
+  transition-delay: 500ms;
+}
+.cardProjects:nth-child(2){
+  transition-delay: 1000ms;
+}
+
+/* Atrasa transição das soft skills */
+
+.liSoftSkills:nth-child(1) {
+  transition-delay: 200ms;
+}
+.liSoftSkills:nth-child(2) {
+  transition-delay: 400ms;
+}
+.liSoftSkills:nth-child(3) {
+  transition-delay: 600ms;
+}
+.liSoftSkills:nth-child(4) {
+  transition-delay: 800ms;
+}
+.liSoftSkills:nth-child(5) {
+  transition-delay: 1000ms;
+}
+.liSoftSkills:nth-child(6) {
+  transition-delay: 1200ms;
+}
+.liSoftSkills:nth-child(7) {
+  transition-delay: 1400ms;
+}
+.liSoftSkills:nth-child(8) {
+  transition-delay: 1600ms;
+}
+.liSoftSkills:nth-child(9) {
+  transition-delay: 1800ms;
+}
+.liSoftSkills:nth-child(10) {
+  transition-delay: 2000ms;
+}
+.liSoftSkills:nth-child(11) {
+  transition-delay: 2200ms;
+}
+.liSoftSkills:nth-child(12) {
+  transition-delay: 2400ms;
+}
+
+
+
+/* Atrasa transição dos cards de skills */
+.cardSkill:nth-child(1){
+  transition-delay: 400ms;
+}
+.cardSkill:nth-child(2){
+  transition-delay: 600ms;
+}
+.cardSkill:nth-child(3){
+  transition-delay: 800ms;
+}
+.cardSkill:nth-child(4){
+  transition-delay: 1200ms;
+}
+.cardSkill:nth-child(5){
+  transition-delay: 1400ms;
+}
+.cardSkill:nth-child(6){
+  transition-delay: 1600ms;
+}
+.cardSkill:nth-child(7){
+  transition-delay: 1800ms;
+}
+.cardSkill:nth-child(8){
+  transition-delay: 2000ms;
+}
+.cardSkill:nth-child(9){
+  transition-delay: 2200ms;
+}
+.cardSkill:nth-child(10){
+  transition-delay: 2400ms;
+}

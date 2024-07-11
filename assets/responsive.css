@@ -1,0 +1,478 @@
+:root {
+  /* Cria variaveis com minha paleta de cores para serm utilizadas no site */
+  --black: #000000;
+  --charcoal: #151515;
+  --gray: #6c757d;
+  --ligthGray: #e5e5e5;
+  --orange: #fca311;
+  --darkOrange: #f48c06;
+  --blue: #14213d;
+}
+
+/* Desktops e telas grandes */
+@media (min-width: 1280px) {
+  /* --------------------------------------------------------- Responsividade seção bem vindos --------------------------------------------------------- */
+
+  #welcome {
+    justify-content: center;
+  }
+
+  .sections {
+    justify-content: space-around;
+  }
+
+  /* --------------------------------------------------------- Responsividade sobre mim e objetivo --------------------------------------------------------- */
+
+  .textTerminal {
+    height: 25rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção contato --------------------------------------------------------- */
+
+  .textContact {
+    /* Subtitulo da área de contato */
+    width: 50%;
+  }
+}
+
+/* Notebooks de tamanho médio */
+@media (max-width: 1279px) {
+  /* --------------------------------------------------------- Responsividade navbar e menu fullscreen --------------------------------------------------------- */
+
+  .logo h1 a {
+    /* Link da "logo" do site */
+    font-size: 1.5rem;
+  }
+
+  .navList,
+  .btnNav {
+    /* Esconde a lista do navbar e o botão do currículo */
+    display: none;
+  }
+
+  .iconMenuButton {
+    /* Div com o botão de menu bars */
+    display: flex;
+  }
+
+  .menuFullScreen li {
+    /* Controla os elementos da lista */
+    font-size: 2rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção bem vindos --------------------------------------------------------- */
+
+  #welcome {
+    justify-content: center;
+  }
+
+  .sections {
+    justify-content: space-around;
+    padding: 4em 0em;
+  }
+
+  /* --------------------------------------------------------- Responsividade sobre mim e objetivo --------------------------------------------------------- */
+
+  .divTerminal {
+    /* Div com os itens do terminal */
+    width: 50%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção experiência--------------------------------------------------------- */
+
+  .cardExperience {
+    /* Div do card de experiência */
+    width: 40%;
+    min-height: 50rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção formação --------------------------------------------------------- */
+
+  .cardFormation {
+    /* Div do card de formação */
+    min-height: 32rem;
+  }
+
+  .cardImgFormation {
+    /* Div com a imagem do card de formação */
+    min-height: 11rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção skills --------------------------------------------------------- */
+
+  .containerSoftSkills ul {
+    /* Lista não ordenada das soft skills */
+    padding-left: 5rem;
+    justify-content: space-between;
+  }
+
+  .containerSoftSkills li {
+    /* Item da lista não ordenada das soft skills */
+    width: 35%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção projetos --------------------------------------------------------- */
+
+  .cardProjects {
+    /* Div do card de projetos */
+    width: 70%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção contato --------------------------------------------------------- */
+
+  .contactForm {
+    /* Formulário de contato */
+    width: 80%;
+  }
+}
+
+/* Notebooks pequenos e tablets em modo paisagem */
+@media (max-width: 1024px) {
+  /* --------------------------------------------------------- Responsividade navbar e menu fullscreen --------------------------------------------------------- */
+
+  .navbar {
+    /* Navbar do site */
+    padding: 2rem;
+  }
+
+  .iconMenuButton {
+    /* Icone de menu bars */
+    width: 10%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção bem vindos --------------------------------------------------------- */
+
+  #welcome {
+    justify-content: center;
+  }
+
+  #welcomeText {
+    /* Texto da seção de bem vindo */
+    font-size: 2rem;
+  }
+
+  #welcomeName {
+    /* Meu nome da seção de bem vindo */
+    font-size: 3rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade navbar e menu fullscreen --------------------------------------------------------- */
+
+  .sections {
+    justify-content: space-around;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção experiência--------------------------------------------------------- */
+
+  .containerCardsExperience {
+    /* Container com os cards de experiência */
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cardExperience {
+    /* Div do card de experiência */
+    width: 70%;
+  }
+
+  .cardTextExperience {
+    /* Div com todos os textos do card de experiência */
+    font-size: 1.35rem;
+  }
+
+  .cardParagraphExperience {
+    /* Div da imagem do card de experiência */
+    font-size: 1.2rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção formação --------------------------------------------------------- */
+
+  .containerCardsFormation{
+    flex-wrap: wrap;
+  }
+
+  .cardFormation {
+    /* Div do card de formação */
+    width: 60%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção skills --------------------------------------------------------- */
+
+  .containerSoftSkills li {
+    /* Item da lista não ordenada das soft skills */
+    width: 50%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção projetos --------------------------------------------------------- */
+
+  .containerCardsProjects {
+    /* Container com os cards de projetos */
+    flex-direction: column;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção contato --------------------------------------------------------- */
+
+  .contactForm {
+    /* Formulário de contato */
+    gap: 10px;
+  }
+}
+
+/* Tablets em modo retrato */
+@media (max-width: 768px) {
+  .sections {
+    justify-content: space-around;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção bem vindos --------------------------------------------------------- */
+
+  #welcome {
+    /* Seção de bem vindos */
+    justify-content: center;
+  }
+
+  /* --------------------------------------------------------- Responsividade sobre mim e objetivo --------------------------------------------------------- */
+
+  .divTerminal {
+    width: 70%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção experiência--------------------------------------------------------- */
+
+  .cardExperience{
+    width: 90%;
+  }
+
+  .cardTextExperience {
+    /* Div com todos os textos do card de experiência */
+    font-size: 1.2rem;
+  }
+
+  .cardParagraphExperience {
+    /* Div da imagem do card de experiência */
+    font-size: 1.1rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção formação --------------------------------------------------------- */
+
+  .containerCardsFormation {
+    /* Container com os cards de formação */
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção skills --------------------------------------------------------- */
+
+  .containerSoftSkills ul {
+    /* Lista não ordenada das soft skills */
+    flex-direction: column;
+  }
+
+  .containerSoftSkills li{
+    width: 90%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  /* --------------------------------------------------------- Responsividade navbar e menu fullscreen --------------------------------------------------------- */
+
+  .menuFullScreen li {
+    /* Controla os elementos da lista */
+    font-size: 2rem;
+  }
+
+  .logo h1 a {
+    /* Link da "logo" do site */
+    font-size: 1.2rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção bem vindos --------------------------------------------------------- */
+
+  #welcomeText {
+    /* Texto da seção de bem vindo */
+    font-size: 1.4rem;
+  }
+
+  #welcomeName {
+    /* Meu nome da seção de bem vindo */
+    height: 3rem;
+    font-size: 1.7rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção sobre mim e objetivo--------------------------------------------------------- */
+
+  #about {
+    /* Div seção sobre mim */
+    padding-bottom: 2em;
+  }
+
+  .title {
+    /* Títulos das seções */
+    font-size: 1.8rem;
+  }
+
+  .divTerminal {
+    /* Div do com conteudo do terminal */
+    width: 95%;
+  }
+
+  .terminalHeader {
+    /* Header do terminal, com icones, usuario */
+    font-size: 1.3rem;
+    padding: 0.5em;
+  }
+
+  .textTerminal {
+    /* Parágrafo com texto do temrinal */
+    font-size: 1.2rem;
+  }
+
+  .terminalAdd {
+    /* Div com o icone de + no terminal */
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção experiência--------------------------------------------------------- */
+
+  .cardExperience {
+    /* Div do card de experiência */
+    width: 98%;
+  }
+
+  .imgExperience {
+    /* Imagem do card de experiência */
+    max-width: 50%;
+  }
+
+  .cardTextExperience {
+    /* Div com todos os textos do card de experiência */
+    font-size: 1rem;
+  }
+
+  .cardParagraphExperience {
+    /* Div da imagem do card de experiência */
+    font-size: 0.9rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção formação --------------------------------------------------------- */
+
+  .cardFormation {
+    /* Div do card de formação */
+    width: 98%;
+  }
+
+  .imgFormation {
+    /* Imagem do card de formação */
+    max-width: 50%;
+  }
+
+  .cardTextFormation {
+    /* Div com todos os textos do card de formação */
+    font-size: 1rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção skills --------------------------------------------------------- */
+
+  #skills {
+    /* Seção de skills */
+    gap: 10px;
+  }
+
+  .containerSoftSkills ul {
+    /* Lista não ordenada das soft skills */
+    padding: 0;
+  }
+
+  .containerSoftSkills li {
+    /* Item da lista não ordenada das soft skills */
+    width: 100%;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção projetos --------------------------------------------------------- */
+
+  .cardProjects {
+    /* Div do card de projetos */
+    display: block;
+    width: 98%;
+    min-height: 0;
+  }
+
+  .imgProjects {
+    /* Imagem do card de projetos */
+    max-width: 80%;
+  }
+
+  .cardTextProjects {
+    /* Div com todos os textos do card de projetos */
+    font-size: 1rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção contato --------------------------------------------------------- */
+
+  .contactForm {
+    /* Formulário de contato */
+    width: 95%;
+  }
+
+  .titleContact {
+    /* Título da área de contato */
+    font-size: 1.4rem;
+  }
+
+  .textContact {
+    /* Subtitulo da área de contato */
+    font-size: 1rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 330px) {
+  /* --------------------------------------------------------- Responsividade navbar e menu fullscreen --------------------------------------------------------- */
+
+  .navbar {
+    /* Navbar do site */
+    padding: 0.5em;
+    justify-content: space-around;
+  }
+
+  .list {
+    /* Lista ul com todos os links */
+    gap: 15px;
+  }
+
+  .menuFullScreen li {
+    /* Controla os elementos da lista */
+    font-size: 1.7rem;
+  }
+
+  .menuFull-Social {
+    /* Div que guarda todos as divs e links de redes sociais */
+    font-size: 2rem;
+  }
+
+  .closeMenuIcon {
+    /* Icone de fechar o menu fullscreen */
+    top: 5px;
+    right: 5px;
+  }
+
+  .openMenuIcon {
+    /* Icone menu bars */
+    font-size: 1.4rem;
+  }
+
+  .logo h1 a {
+    /* Link da "logo" do site */
+    font-size: 1rem;
+  }
+
+  /* --------------------------------------------------------- Responsividade seção obetivo --------------------------------------------------------- */
+
+  #objective {
+    padding-bottom: 2em;
+  }
+}

@@ -1,0 +1,45 @@
+<header> <!--Fechando header-->
+    <nav class="navbar"> <!--Abrindo nav-->
+        <div class="logo"> <!--Abrindo div logo-->
+            <h1> <a href="../home/index.html">Leandro Tanner <span id="destaqueTitulo">| Dev.</span></a> </h1> 
+        </div> <!--Fechando div logo-->
+            <ul class="navList"> <!-- Abre lista ul do menu nav -->
+                <li class="navItem"> <a href="#about" class="navLink">Sobre mim</a> </li>
+                <li class="navItem"> <a href="#objective" class="navLink">Objetivo</a> </li>
+                <li class="navItem"> <a href="#experience" class="navLink">Experiência</a> </li>
+                <li class="navItem"> <a href="#formation" class="navLink">Formação</a> </li>
+                <li class="navItem"> <a href="#skills" class="navLink">Habilidades</a> </li>
+                <li class="navItem"> <a href="#projects" class="navLink">Projetos</a> </li>
+            </ul>
+        
+            <div class="btnNav">  <!--Abrindo div btnNav-->
+                <button class="btnCVC"> <a target="_blank" href="https://bit.ly/ltcvc">Currículo <i class="fa-solid fa-book"></i></a></button>
+            </div> <!--Fechando div btnNav-->
+
+        <div class="iconMenuButton"> <!--Abrindo div icone do menu-->
+            <button onclick="abrirMenu()"> <!--Abrindo botão mobile-->
+                <i class="fa-solid fa-bars icon openMenuIcon"></i>
+            </button> <!--fechando botão mobile-->
+        </div> <!--Fechando div icone do menu-->
+
+    </nav> <!--Fechando nav-->
+</header> <!--Fechando header-->
+
+<div class="menuFullScreen"> <!--Abre menu fullscreen-->
+            <ul class="list"> <!--Cria lista de itens do menu-->
+                <li><a class="itemLink" href="#about">Sobre</a></li>
+                <li><a class="itemLink" href="#objective">Objetivo</a></li>
+                <li><a class="itemLink" href="#experience">Experiência</a></li>
+                <li><a class="itemLink" href="#formation">Formação</a></li>
+                <li><a class="itemLink" href="#skills">Habilidades</a></li>
+                <li><a class="itemLink" href="#projects">Projetos</a></li>
+                <li><a class="itemLink" target="_blank" href="https://bit.ly/ltcvc">Currículo <i class="fa-solid fa-book"></i></a></li>
+            </ul>
+        <div class="menuFull-Social"> <!--Cria div para guardar os ícones de redes sociais-->
+            <div class="socialDiv"><a target="_blank" class="itemSocialLink" id="telegram" href="https://rebrand.ly/lttelegram"><i class="fa-brands fa-telegram socialIcons"></i></a></div>
+            <div class="socialDiv"><a target="_blank" class="itemSocialLink" id="linkedin" href="https://bit.ly/linkedinltanner"><i class="fa-brands fa-linkedin socialIcons"></i></a></div>
+            <div class="socialDiv"><a target="_blank" class="itemSocialLink" id="github" href="https://rebrand.ly/ltgit"><i class="fa-brands fa-github socialIcons"></i></a></div>
+            <div class="socialDiv"><a target="_blank" class="itemSocialLink" id="email" href="https://rebrand.ly/lt_email"><i class="fa-solid fa-envelope socialIcons"></i></a></div>
+        </div> <!--Fecha div dos ícones de redes sociais-->
+        <i onclick="fecharMenu()" class="fa-solid fa-xmark icon closeMenuIcon"></i><!-- Botão de fechar o menu fullscreen -->
+</div> <!--Fecha menu fullscreen-->

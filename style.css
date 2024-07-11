@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 100%;
+}
+
+canvas {
+  display: flex;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+
+canvas.particles-js-canvas-el{
+    padding: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+} /* ---- stats.js ---- */
+
+.divRedirecionar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30%;
+    min-width: 30%;
+    max-width: 90%;
+    z-index: 1;
+    background: transparent;
+    color: white;
+    top: 50%;
+    padding: 1%;
+    gap: 50px;
+
+}
+
+#labelText{
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 450px) {
+    #labelText {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+
+#buttonRedirect{
+    cursor: pointer;
+    min-width: 90%;
+    min-height: 10%;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    border-radius: 10px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    border: none;
+    background-color: white;
+    padding: 1%;
+    animation: pulsante 1s infinite;
+}
+
+@keyframes pulsante {
+    0%,100%{
+
+        transform: scale(1);
+
+    }  
+
+    50%{
+
+        transform: scale(1.02);
+
+    }
+}
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
