@@ -822,101 +822,122 @@ canvas {
 
 /* Atrasa transição dos cards de formação */
 .cardFormation:nth-child(1){
-  transition-delay: 400ms;
+  transition-delay: 200ms;
 }
 .cardFormation:nth-child(2){
-  transition-delay: 800ms;
+  transition-delay: 400ms;
 }
 .cardFormation:nth-child(3){
-  transition-delay: 1200ms;
+  transition-delay: 600ms;
 }
 
 /* Atrasa transição dos cards de experiencia */
 .cardExperience:nth-child(1){
-  transition-delay: 500ms;
+  transition-delay: 250ms;
 }
 .cardExperience:nth-child(2){
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
 
 
 /* Atrasa transição dos cards de projetos */
 .cardProjects:nth-child(1){
-  transition-delay: 500ms;
+  transition-delay: 250ms;
 }
 .cardProjects:nth-child(2){
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
 
 /* Atrasa transição das soft skills */
 
 .liSoftSkills:nth-child(1) {
-  transition-delay: 200ms;
+  transition-delay: 50ms;
 }
 .liSoftSkills:nth-child(2) {
-  transition-delay: 400ms;
+  transition-delay: 100ms;
 }
 .liSoftSkills:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 150ms;
 }
 .liSoftSkills:nth-child(4) {
-  transition-delay: 800ms;
+  transition-delay: 200ms;
 }
 .liSoftSkills:nth-child(5) {
-  transition-delay: 1000ms;
+  transition-delay: 250ms;
 }
 .liSoftSkills:nth-child(6) {
-  transition-delay: 1200ms;
+  transition-delay: 300ms;
 }
 .liSoftSkills:nth-child(7) {
-  transition-delay: 1400ms;
+  transition-delay: 400ms;
 }
 .liSoftSkills:nth-child(8) {
-  transition-delay: 1600ms;
+  transition-delay: 450ms;
 }
 .liSoftSkills:nth-child(9) {
-  transition-delay: 1800ms;
+  transition-delay: 500ms;
 }
 .liSoftSkills:nth-child(10) {
-  transition-delay: 2000ms;
+  transition-delay: 550ms;
 }
 .liSoftSkills:nth-child(11) {
-  transition-delay: 2200ms;
+  transition-delay: 600ms;
 }
 .liSoftSkills:nth-child(12) {
-  transition-delay: 2400ms;
+  transition-delay: 650ms;
 }
 
 
 
 /* Atrasa transição dos cards de skills */
 .cardSkill:nth-child(1){
-  transition-delay: 400ms;
+  transition-delay: 200ms;
 }
 .cardSkill:nth-child(2){
-  transition-delay: 600ms;
+  transition-delay: 300ms;
 }
 .cardSkill:nth-child(3){
-  transition-delay: 800ms;
+  transition-delay: 400ms;
 }
 .cardSkill:nth-child(4){
-  transition-delay: 1200ms;
+  transition-delay: 500ms;
 }
 .cardSkill:nth-child(5){
-  transition-delay: 1400ms;
+  transition-delay: 600ms;
 }
 .cardSkill:nth-child(6){
-  transition-delay: 1600ms;
+  transition-delay: 700ms;
 }
 .cardSkill:nth-child(7){
-  transition-delay: 1800ms;
+  transition-delay: 800ms;
 }
 .cardSkill:nth-child(8){
-  transition-delay: 2000ms;
+  transition-delay: 900ms;
 }
 .cardSkill:nth-child(9){
-  transition-delay: 2200ms;
+  transition-delay: 1000ms;
 }
 .cardSkill:nth-child(10){
-  transition-delay: 2400ms;
+  transition-delay: 1100ms;
+}
+
+
+/* Estilizando barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* largura da barra */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black); /* cor de fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black); /* cor do thumb */
+  border-radius: 5px; /* borda arredondada do thumb */
+  border: 1px solid var(--orange);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--charcoal); /* cor do thumb ao passar o mouse */
+  cursor: pointer;
 }
